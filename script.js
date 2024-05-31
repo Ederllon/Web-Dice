@@ -9,7 +9,7 @@ const btn = document.getElementById('btn');
 btn.addEventListener('click', Action)
 
 function Action(){
-    let dice = (Math.random() * max) + min;
+    let dice = Math.floor(Math.random() * (max+min)-1);
     respost.innerHTML = 'valor do dado: ' + dice;
 
 
